@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Start Page</title>
+      <!-- Bootstrap Links-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+      <!-- style.css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <main>
+         <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+            <div class="row">
+               <div class="col-sm-12 text-center">
+                  <h1 class="quiz-name">Quiz Mania</h1>
+               </div>
+               <div class="col-sm-12 text-center mt-3">
+                  <label class="enter-name-lbl">Enter Your Name</label>
+               </div>
+               <div class="col-sm-12 text-center mt-3">
+                  <form class="name-form" name="name-form" onsubmit="submitForm(event)">
+                     <input name="name" type="text" class="name-field" autofocus required><br>
+                     <button class="btn mt-5 next-btn">Start</button>
+                  </form>
+               </div>
+               <div class="col-sm-12">
+               </div>
+            </div>
+         </div>
+      </main>
+      <script src="js/start.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+</html>

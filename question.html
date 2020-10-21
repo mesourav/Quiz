@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Question Page</title>
+      <!-- Bootstrap Links-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+      <!-- style.css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <main>
+         <div class="container question-background">
+            <div class="row welcome-div">
+               <div class="col-sm-12 welcome-div">
+                  <label id="welcome-text"></label>
+               </div>
+               <div class="mx-2 col-sm-12 text-center">
+                <div class="time-div">Time left = <span id="timer"></span></div>
+               </div>
+               <div class="col-sm-12" id="questions">   
+               </div>
+               <div class="col-sm-12 next-btn-background  mt-5 mb-5">
+                   <div class="row">
+                       <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                        <button class="btn-next-active" id="previous-question-btn"  onclick="back()">Previous Question</button>   
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn-next-active" id="btn-next-model"  onclick="next()">Next Questions</button>
+                       </div>
+                   </div>
+                   <div class="col-sm-12 mt-4 text-center d-flex align-items-center justify-content-center">
+                     <button class="btn-next-active" id="btn-submit"  onclick="submitAnswers()" style="display: none;">Submit Test</button>
+                   </div>
+               </div>
+            </div>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn"></button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                  <span class="close text-right">&times;</span>
+                  <div class="row">
+                     <div class="col-sm-12 text-center">
+                        <h2 id="result-text"></h2>
+                        <h1>You Score is : </h1>
+                        <h4 id="score"></h4>
+                     </div>
+                     <div class="col-sm-12 text-center">
+                        <button class="btn retry-btn" id="retry-bnt" onclick="retry()">Retry</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <script src="js/question.js"></script>
+      <script src="js/timer.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+</html>

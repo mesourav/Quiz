@@ -1,0 +1,363 @@
+body{
+    background-image: url("../images/clay-banks-u27Rrbs9Dwc-unsplash.jpg");  
+    height: 100vh;
+    background-position: center;
+}
+.quiz-name{
+    color: white;
+    font-size: 90px;
+}
+.enter-name-lbl{
+    font-size: 44px;
+    color: white;
+}
+.name-field{
+    overflow: visible;
+    background: content-box;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 24px;
+}
+.name-field:focus{
+    outline: none;
+}
+
+.retry-btn{
+
+    font-size: 25px;
+
+}
+
+.next-btn{
+    background-color: white;
+    color: black;
+    width: 192px;
+    border-radius: 26px;
+    padding: 12px;
+    font-weight: 600;
+    transition: all .7s ease-out;
+}
+.next-btn:focus{
+    border: none;
+    outline: none;
+}
+.next-btn:hover{
+    padding: 15px;
+    border-radius: 27px;
+    width: 220px;
+    
+}
+.question-background{
+    
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 580px;
+    width: 1000px;
+}
+.welcome-div{
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+#welcome-text{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+}
+.option1{
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: 0.4s all;
+    font-size: 24px;
+    
+
+}
+.option1:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+}
+.option2{
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: 0.4s all;
+    font-size: 24px;
+    
+
+}
+.option2:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+}
+.option3{
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: 0.4s all;
+    font-size: 24px;
+    
+
+}
+.option3:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+}
+
+
+
+.option {
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: 0.4s all;
+    font-size: 24px;
+}
+.option_group {
+    list-style-type: none;
+    margin: 30px 0;
+    padding-inline-start : 0px;
+}
+.option:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+}
+.option.active {
+    background-color: #341f97;
+    color: #fff;
+}
+.option1.active {
+    background-color: #341f97;
+    color: #fff;
+}
+.option2.active {
+    background-color: #341f97;
+    color: #fff;
+}
+.option3.active {
+    background-color: #341f97;
+    color: #fff;
+}
+.question-tittle {
+    margin-top: 20px;
+    color: white;
+    height: 90px;
+    font-size: 30px;
+}
+
+.btn-next-disable {
+    border: none;
+    padding: 15px 35px;
+    background-color: gray;
+    color: black;
+    border-radius: 27px;
+    transition: 0.4s all;
+}
+
+.btn-next-active{
+    border: none;
+    padding: 15px 35px;
+    background-color: white;
+    color: black;
+    border-radius: 27px;
+    transition: 0.4s all;
+    
+}
+.btn-next-active:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.question-box{
+    max-width: 50%;
+}
+#myBtn{
+    display: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.boxed label {
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: 0.4s all;
+    font-size: 24px;
+  }
+  .boxed label:hover {
+    background-color: white;
+    color: black;
+  }
+ 
+  .boxed input[type="radio"] {
+    display: none;
+  }
+  
+  .boxed input[type="radio"]:checked + label {
+    background-color:  #341f97;
+    
+  }
+  .boxed{
+      margin-top: 30px;
+  }
+  .boxed1 label {
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: 0.4s all;
+    font-size: 24px;
+  }
+  .boxed1 label:hover {
+    background-color: white;
+    color: black;
+  }
+ 
+  .boxed1 input[type="radio"] {
+    display: none;
+  }
+  
+  .boxed1 input[type="radio"]:checked + label {
+    background-color:  #341f97;
+    
+  }
+  .boxed1{
+      margin-top: 30px;
+  }
+  .boxed2 label {
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: 0.4s all;
+    font-size: 24px;
+  }
+  .boxed2 label:hover {
+    background-color: white;
+    color: black;
+  }
+ 
+  .boxed2 input[type="radio"] {
+    display: none;
+  }
+  
+  .boxed2 input[type="radio"]:checked + label {
+    background-color:  #341f97;
+    
+  }
+  .boxed2{
+      margin-top: 30px;
+  }
+  .boxed3 label {
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: 0.4s all;
+    font-size: 24px;
+  }
+  .boxed3 label:hover {
+    background-color: white;
+    color: black;
+  }
+ 
+  .boxed3 input[type="radio"] {
+    display: none;
+  }
+  
+  .boxed3 input[type="radio"]:checked + label {
+    background-color:  #341f97;
+    
+  }
+  .boxed3{
+      margin-top: 30px;
+  }
+  body{
+    background-color:#2D3047;
+  }
+  
+  .time-div{
+      background-color: #2D3047 ;
+      color: white;
+      font-size: 25px;
+  }
+
+
+@media  only screen and (max-width: 767px)  {
+    .question-tittle{
+        height: 120px !important;
+    }
+}
+
+
